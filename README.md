@@ -4,6 +4,8 @@
 
 Ce projet est une plateforme de e-commerce pour Alten, visant à gérer les listes de produits et les interactions avec les clients. Il comprend des tâches à la fois front-end et back-end. Selon votre rôle, veuillez suivre les sections correspondantes :
 
+![Alten Shop](https://github.com/user-attachments/assets/284a8944-ba09-41e7-80fd-6aa6746f032d)
+
 ## Front-end (Angular)
 
 ### Fonctionnalités Implémentées :
