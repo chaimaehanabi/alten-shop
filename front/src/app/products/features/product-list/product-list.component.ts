@@ -104,24 +104,18 @@ export class ProductListComponent implements OnInit {
 
   public onDelete(product: Product) {
     this.productsService.delete(product.id).subscribe(() => {
-      this.productsService.get().subscribe(() => {
-        this.paginate({ first: 0, rows: this.rows });
-      });
+      this.paginate({ first: 0, rows: this.rows });
     });
   }
 
   public onSave(product: Product) {
     if (this.isCreation) {
       this.productsService.create(product).subscribe(() => {
-        this.productsService.get().subscribe(() => {
-          this.paginate({ first: 0, rows: this.rows });
-        });
+        this.paginate({ first: 0, rows: this.rows });
       });
     } else {
       this.productsService.update(product).subscribe(() => {
-        this.productsService.get().subscribe(() => {
-          this.paginate({ first: 0, rows: this.rows });
-        });
+        this.paginate({ first: 0, rows: this.rows });
       });
     }
     this.closeDialog();
